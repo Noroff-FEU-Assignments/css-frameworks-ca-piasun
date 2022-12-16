@@ -1,0 +1,13 @@
+:root {
+  --background-colour: radial-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
+  --secondary-colour: #e92569;
+  --background-nav: #efefef;
+  --background-hover: #ffffff;
+  --primary-font: #767676;
+  --light-font-colour: #c7c7c7;
+  --dark-font-colour: #0a0a0a;
+}

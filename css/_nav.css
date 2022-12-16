@@ -1,0 +1,27 @@
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: var(--secondary-colour) !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.navbar {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: var(--dark-font-colour) !important;
+}
+
+.navbar-nav .nav-item .active > .nav-link {
+  background-color: var(--background-hover) !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.form .btn {
+  background-color: var(--secondary-colour) !important;
+}

@@ -1,0 +1,16 @@
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-indicators button {
+  width: 30px;
+  height: 30px;
+  margin: 0 16px;
+  border-radius: 3px;
+  color: var(--secondary-colour) !important;
+}
+
+.carousel-inner {
+  max-height: 600px;
+}
