@@ -1,27 +1,39 @@
 .navbar-brand {
   font-family: "Playfair Display", serif;
   font-size: 20px;
-  color: var(--secondary-colour) !important;
+  color: var(--secondary-colour);
   font-style: italic;
   font-weight: bold;
 }
 
 .navbar {
-  font-family: "Lato", sans-serif;
+  background-color: var(--background-nav) !important;
+  color: var(--dark-font-colour);
+  height: 70px;
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: var(--dark-font-colour) !important;
+.nav-link.active {
+  background-color: var(--background-hover);
+  border-radius: 3px;
 }
 
-.navbar-nav .nav-item .active > .nav-link {
-  background-color: var(--background-hover) !important;
+.nav-link:hover {
+  background-color: var(--background-hover);
 }
 
 .navbar-toggler {
   border: none;
 }
 
-.form .btn {
-  background-color: var(--secondary-colour) !important;
+form.d-flex input {
+  margin-right: 0 !important;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+form.d-flex .btn-outline-success {
+  background-color: var(--secondary-colour);
+  color: var(--background-hover);
+  border: none;
+  border-radius: 0 3px 3px 0;
 }

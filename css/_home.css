@@ -3,14 +3,30 @@
   background-position: center center;
 }
 
-.carousel-indicators button {
+.carousel-indicators.button {
   width: 30px;
   height: 30px;
   margin: 0 16px;
   border-radius: 3px;
-  color: var(--secondary-colour) !important;
+}
+
+.carousel-indicators.button.active {
+  background-color: var(--secondary-colour);
 }
 
 .carousel-inner {
   max-height: 600px;
+}
+
+h1 {
+  font-size: 34px;
+  color: var(--secondary-colour);
+}
+
+.nav-item img {
+  width: 100%;
+}
+
+.share {
+  display: flex;
 }

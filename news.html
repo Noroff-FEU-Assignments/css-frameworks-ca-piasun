@@ -21,51 +21,63 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">The YAY Company</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="news.html"
-                >News</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">Go</button>
-          </form>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The YAY Company</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="news.html"
+                  >News</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Go</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="container">
+      </nav>
       <div class="container">
+        <h1 class="home">News</h1>
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+
         <div class="row align-items-center">
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-1.jpg"
                 class="card-img-top"
@@ -82,7 +94,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-2.jpg"
                 class="card-img-top"
@@ -99,7 +111,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-3.jpg"
                 class="card-img-top"
@@ -116,7 +128,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-4.jpg"
                 class="card-img-top"
@@ -133,7 +145,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-5.jpg"
                 class="card-img-top"
@@ -150,7 +162,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-6.jpg"
                 class="card-img-top"
@@ -167,7 +179,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-7.jpg"
                 class="card-img-top"
@@ -184,7 +196,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
+            <div class="card news">
               <img
                 src="images/news/news-8.jpg"
                 class="card-img-top"
@@ -201,6 +213,16 @@
             </div>
           </div>
         </div>
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
     <footer>
