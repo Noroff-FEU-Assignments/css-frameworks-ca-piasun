@@ -9874,15 +9874,15 @@ form.d-flex .btn-outline-success {
   background-position: center center;
 }
 
-.carousel-indicators.button {
+.carousel-indicators button {
   width: 30px;
   height: 30px !important;
   margin: 0 16px;
   border-radius: 3px;
 }
 
-.carousel-indicators.button.active {
-  background-color: #e92569 !important;
+.carousel-indicators .active {
+  background-color: #e92569;
 }
 
 .carousel-inner {
