@@ -12,10 +12,6 @@ body {
   flex-direction: column;
 }
 
-.main {
-  background-color: var(--background-colour);
-}
-
 footer {
   display: flex;
   flex-shrink: 0;
