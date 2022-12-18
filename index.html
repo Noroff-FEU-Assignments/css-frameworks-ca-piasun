@@ -20,7 +20,7 @@
         <div class="container-fluid">
           <a class="navbar__brand" href="index.html">The YAY Company</a>
           <button
-            class="navbar__toggler"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -87,14 +87,17 @@
           <div
             class="carousel-item active"
             style="background-image: url(images/carousel/carousel-1.jpg)"
+            alt="room with many old tv's"
           ></div>
           <div
             class="carousel-item"
             style="background-image: url(images/carousel/carousel-2.jpg)"
+            alt="the green ray"
           ></div>
           <div
             class="carousel-item"
             style="background-image: url(images/carousel/carousel-3.jpg)"
+            alt="broken old tv"
           ></div>
         </div>
       </div>
@@ -108,7 +111,10 @@
           </p>
         </div>
         <div class="container">
-          <div class="accordion d-md-none" id="accordionExample">
+          <div
+            class="accordion d-md-none shadow p-3 mb-5"
+            id="accordionExample"
+          >
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
@@ -135,7 +141,11 @@
                     justo, a ullamcorper turpis. Cras vehicula pharetra lectus
                     non maximus. Sed condimentum mattis rhoncus.
                   </p>
-                  <img src="images/tab/tab-1.jpg" class="img-thumbnail" />
+                  <img src="images/tab/tab-1.jpg" class="img" alt="an old tv" />
+                  <div class="d-flex justify-content-center share">
+                    <p>SHARE</p>
+                    <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -165,7 +175,15 @@
                     justo, a ullamcorper turpis. Cras vehicula pharetra lectus
                     non maximus. Sed condimentum mattis rhoncus.
                   </p>
-                  <img src="images/tab/tab-2.jpg" class="img-thumbnail" />
+                  <img
+                    src="images/tab/tab-2.jpg"
+                    class="img"
+                    alt="pictures hanging on a wall"
+                  />
+                  <div class="d-flex justify-content-center share">
+                    <p>SHARE</p>
+                    <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -195,18 +213,75 @@
                     justo, a ullamcorper turpis. Cras vehicula pharetra lectus
                     non maximus. Sed condimentum mattis rhoncus.
                   </p>
-                  <img src="images/tab/tab-3.jpg" class="img-thumbnail" />
+                  <img
+                    src="images/tab/tab-3.jpg"
+                    class="img"
+                    alt="small broken window"
+                  />
+                  <div class="d-flex justify-content-center share">
+                    <p>SHARE</p>
+                    <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="d-none d-md-block">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link">First</a>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  First
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  Second
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  Third
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
                 <div class="row">
                   <div class="col-md-6 col-lg-4">
-                    <img src="images/tab/tab-1.jpg" />
+                    <img src="images/tab/tab-1.jpg" alt="an old tv" />
                   </div>
                   <div class="col-md-6 col-lg-8">
                     <p>
@@ -216,19 +291,27 @@
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </p>
-                    <div class="share">
+                    <div class="d-flex justify-content-left share">
                       <p>SHARE</p>
                       <i class="fa fa-facebook"></i
                       ><i class="fa fa-twitter"></i>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Second</a>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
                 <div class="row">
                   <div class="col-md-6 col-lg-4">
-                    <img src="images/tab/tab-2.jpg" />
+                    <img
+                      src="images/tab/tab-2.jpg"
+                      alt="pictures hanging on a wall"
+                    />
                   </div>
                   <div class="col-md-6 col-lg-8">
                     <p>
@@ -238,19 +321,24 @@
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </p>
-                    <div>
-                      SHARE
+                    <div class="d-flex justify-content-left share">
+                      <p>SHARE</p>
                       <i class="fa fa-facebook"></i
                       ><i class="fa fa-twitter"></i>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Third</a>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
                 <div class="row">
                   <div class="col-md-6 col-lg-4">
-                    <img src="images/tab/tab-3.jpg" />
+                    <img src="images/tab/tab-3.jpg" alt="small broken window" />
                   </div>
                   <div class="col-md-6 col-lg-8">
                     <p>
@@ -260,15 +348,15 @@
                       pharetra lectus non maximus. Sed condimentum mattis
                       rhoncus.
                     </p>
-                    <div>
-                      SHARE
+                    <div class="d-flex justify-content-left share">
+                      <p>SHARE</p>
                       <i class="fa fa-facebook"></i
                       ><i class="fa fa-twitter"></i>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

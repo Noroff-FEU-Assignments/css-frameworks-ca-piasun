@@ -5,13 +5,13 @@
 
 .carousel-indicators.button {
   width: 30px;
-  height: 30px;
+  height: 30px !important;
   margin: 0 16px;
   border-radius: 3px;
 }
 
 .carousel-indicators.button.active {
-  background-color: $primary;
+  background-color: $primary !important;
 }
 
 .carousel-inner {
@@ -23,14 +23,44 @@ h1 {
   color: $primary;
 }
 
-.nav-tabs {
-  background-color: $background-hover;
+h2 {
+  color: $primary;
+  font-size: 19px;
 }
 
-.nav-item img {
+.accordion.d-md-none.p-3 {
+  padding: 0 !important;
+}
+
+.accordion-button {
+  background-color: $background-hover !important;
+  border-bottom: 1px solid $primary;
+}
+
+.accordion-body {
+  background-color: $background-colour;
+}
+
+
+.nav-link .active, .tab-content {
+  background-color: $background-hover;
+  border-radius: 5px;
+}
+
+.accordion-body img, .tab-content img {
   width: 100%;
 }
-
+ 
 .share {
-  display: flex;
+  margin-top: 20px;
+  
+}
+
+.share p, .share i {
+  color: $navbar-light-color;
+  margin-left: 10px;
+}
+
+.share i{
+  font-size: 20px;
 }

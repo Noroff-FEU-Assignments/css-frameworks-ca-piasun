@@ -9844,13 +9844,15 @@ h1, .h1 {
   color: #0a0a0a;
 }
 .navbar__brand {
+  margin-right: 20px;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   color: #e92569;
   font-style: italic;
   font-weight: bold;
 }
-.navbar__toggler {
+
+.navbar-toggler {
   border: none;
 }
 
@@ -9874,13 +9876,13 @@ form.d-flex .btn-outline-success {
 
 .carousel-indicators.button {
   width: 30px;
-  height: 30px;
+  height: 30px !important;
   margin: 0 16px;
   border-radius: 3px;
 }
 
 .carousel-indicators.button.active {
-  background-color: #e92569;
+  background-color: #e92569 !important;
 }
 
 .carousel-inner {
@@ -9892,16 +9894,44 @@ h1, .h1 {
   color: #e92569;
 }
 
-.nav-tabs {
-  background-color: #ffffff;
+h2, .h2 {
+  color: #e92569;
+  font-size: 19px;
 }
 
-.nav-item img {
+.accordion.d-md-none.p-3 {
+  padding: 0 !important;
+}
+
+.accordion-button {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e92569;
+}
+
+.accordion-body {
+  background-color: #e5e5e5;
+}
+
+.nav-link .active, .tab-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.accordion-body img, .tab-content img {
   width: 100%;
 }
 
 .share {
-  display: flex;
+  margin-top: 20px;
+}
+
+.share p, .share i {
+  color: #0a0a0a;
+  margin-left: 10px;
+}
+
+.share i {
+  font-size: 20px;
 }
 
 .news {
@@ -9929,6 +9959,10 @@ h1, .h1 {
   height: 100%;
   background-color: #767676;
   border-radius: 0 5px 5px 0;
+}
+
+.btn-primary {
+  color: #efefef;
 }
 
 .pagination ul {
@@ -10003,4 +10037,15 @@ form.shadow {
 .btn-primary:hover {
   background-color: #ffffff;
   color: #767676;
+}
+
+@media only screen and (max-width: 600px) {
+  h1, .h1 {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .list-group {
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
