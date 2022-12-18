@@ -1,15 +1,3 @@
-.navbar-brand {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  color: $primary;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.navbar {
-  color: $navbar-light-color;
-}
-
 .nav-link.active {
   background-color: $background-hover;
   border-radius: 3px;
@@ -19,9 +7,24 @@
   background-color: $background-hover;
 }
 
-.navbar-toggler {
-  border: none;
+.navbar {
+  &__inner {
+    color: $navbar-light-color;
+  }
+
+  &__brand  {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: $primary;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &__toggler {
+    border: none;
+  }
 }
+
 
 form.d-flex input {
   margin-right: 0 !important;
