@@ -1,0 +1,37 @@
+.news {
+  background-color: $background-hover;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.news .btn {
+  background-color: $primary;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.news .btn:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: $primary-font;
+  border-radius: 0 5px 5px 0;
+}
+
+.pagination {
+  background-color: $background-hover;
+  border-color: $primary;
+  color: $primary;
+}
+
+li.page-item.active {
+  background-color: $primary;
+  color: $background-hover;
+}

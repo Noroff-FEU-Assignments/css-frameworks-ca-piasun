@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $background-colour;
+  color: $primary-font;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  background-color: $background-hover;
+  margin-top: 20px;
+  color: $primary-font;
+  padding: 10px;
+}
+
+footer i {
+  font-size: 30px;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}

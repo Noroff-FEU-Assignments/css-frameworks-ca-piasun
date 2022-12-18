@@ -1,0 +1,32 @@
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-indicators.button {
+  width: 30px;
+  height: 30px;
+  margin: 0 16px;
+  border-radius: 3px;
+}
+
+.carousel-indicators.button.active {
+  background-color: $primary;
+}
+
+.carousel-inner {
+  max-height: 600px;
+}
+
+h1 {
+  font-size: 34px;
+  color: $primary;
+}
+
+.nav-item img {
+  width: 100%;
+}
+
+.share {
+  display: flex;
+}

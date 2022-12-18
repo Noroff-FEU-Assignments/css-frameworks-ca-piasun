@@ -1,0 +1,62 @@
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: stretch;
+  background-color: $background-colour;
+  color: $primary-font;
+  border: none;
+  margin-top: 10px;
+}
+
+.list-group-item i {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.list-group-item a {
+  text-decoration: none;
+}
+
+.adress p {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.col-md.order-md-1 {
+  padding: 0;
+}
+
+form.shadow {
+  background-color: $background-colour;
+  padding: 20px;
+}
+
+.form-check {
+  display: flex;
+}
+
+.form-check-input {
+  background-color: $primary;
+  min-width: 34px;
+  height: 33px;
+}
+
+.form-check-label {
+  font-size: 15px;
+  padding: 0 0 0 10px;
+}
+
+.btn-primary {
+  background-color: $primary-font;
+  border: none;
+  height: 58px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: $background-hover;
+  color: $primary-font;
+}
